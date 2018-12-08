@@ -7,6 +7,6 @@
 
 ## Preview
 
-![avatar](http://jhmcimg.weinongtech.com/1544258990320/142733/react-chat-web-preview1.png)
+![avatar](http://jhmcimg.weinongtech.com/1544258656813/109715/react-chat-web-preview2.png)
 
 ![avatar](http://jhmcimg.weinongtech.com/1544258990321/110123/react-chat-web-preview2.png)
