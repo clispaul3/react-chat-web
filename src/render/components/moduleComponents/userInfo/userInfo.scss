@@ -1,0 +1,71 @@
+@import '@/style/common';
+#user-info{
+    box-shadow:$box_shadow;
+    width:289px;
+    height:300px;
+    background:#fff;
+    position:absolute;
+    display:none;
+    .up{
+        display: flex;width:100%;
+        border-bottom:$border_style;
+        .left{
+            width:200px;
+            p.nickname{
+                padding:18px;padding-bottom:10px;
+				padding-right:0px;
+                span:nth-child(1){
+                    font-size:16px;color:#000;
+                    @include text_ellipse;display:inline-block;
+                    max-width:150px;
+                }
+                .iconfont{
+                    display:inline-block;position:relative;;
+                    font-size:15px;top:-3px;left:5px;
+                }
+                .icon-icon-nv{
+                    color:#FF4D94;top:-5px;
+                }
+                .icon-nan{
+                    color:#3FA8FF;font-size:18px;
+                }
+            }
+            p.mc-number{
+                padding-left:18px;color:$font_color_notice;
+                @include text_ellipse;margin-top:-5px;
+            }
+        }
+        .user-portrait{
+            padding:15px;width:50px;height:50px;
+            img,span{
+                width:100%;height:100%;
+            }
+            span{
+                line-height:50px;font-size:20px;
+            }
+        }
+    }
+	.down{
+		height:209px;position:relative;
+		.signature{
+			height:28px;width:269px;
+			position:absolute;top:10px;left:10px;
+			>span{
+				margin-top:4px;display:inline-block;
+				margin-left:7px;color:$font_color_notice;
+			}
+			.set-input{
+				span{
+					
+				}
+			}
+		}
+		.send-message{
+			position:absolute;width:25px;height:25px;
+			bottom:5px;right:25px;
+			span{
+				font-size:25px;cursor:pointer;
+			}
+		}
+	}
+}

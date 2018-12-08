@@ -1,0 +1,38 @@
+@import '@/style/common';
+.conversation-{
+	  height:70px;cursor:pointer;box-sizing:border-box;
+		border-bottom:$border_style;position:relative;
+		&:hover{
+			  background:$hover_bagcolor;
+		}
+		.user-portrait{
+			  margin:13px 0 13px 10px;
+		}
+		.nickname{
+				position:absolute;top:13px;left:70px;
+				width:100px;font-size:14px;
+				@include text_ellipse;
+		}
+		.sent-time{
+				position:absolute;right:13px;top:15px;
+				color:$font_color_notice;font-size:12px;
+		}
+		.unread-count{
+			  @include unread_count;
+			  bottom:12px;right:13px;
+		}
+		>p{
+			  position:absolute;left:70px;top:40px;
+				width:130px;@include text_ellipse;
+				span{
+					  color:$font_color_notice;font-size:12px;
+						max-width:130px;display:inline-block;
+				}
+		}
+}
+.current-con{
+	  background:rgb(228,228,228);
+}
+#conversation-list{
+
+}

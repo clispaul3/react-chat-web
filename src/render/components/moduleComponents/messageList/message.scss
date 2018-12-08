@@ -1,0 +1,62 @@
+@import '@/style/common';
+#conversation-message-list{
+}
+.message-container{
+    position:relative;
+    .msg-sent-time{
+      color:$font_color_notice;text-align:center;
+      font-size:12px;height:18px;line-height:18px;
+    }
+    .text-message{
+      max-width:300px;padding:10px;
+      border-radius:5px;margin-top:10px;
+    }
+    .image-message{
+      img{
+        max-width: 202px;
+        max-height: 100px;
+        width: auto;height: auto;border-radius:5px;
+        border:1px solid rgba(155, 145, 145,0.1);
+        cursor:pointer;margin-top:10px;
+      }
+    }
+    .group-notification-message{
+      display:inline-block;
+      text-align:center;
+      font-size:12px;max-width:300px;
+      color:#fff;background:#ddd;
+      padding:4px 10px;
+      position:relative;left:50%;
+      transform:translateX(-50%);
+      border-radius:5px;margin:auto;
+      @include word_break;
+    }
+}
+.msg-from-me{
+  .user-portrait{
+    float:right;margin:10px 10px 0px 10px;
+  }
+  .text-message{
+    float:right;
+    background:rgb(206,220,239);
+  }
+  .image-message{
+    img{
+      float:right;
+    }
+  }
+}
+.msg-from-friend{
+  .user-portrait{
+    float:left;margin:10px 10px 0px 10px;
+  }
+  .text-message{
+    float:left;
+    background:#EBEBEB;
+  }
+  .image-message{
+    img{
+      float:left;
+    }
+  }
+}

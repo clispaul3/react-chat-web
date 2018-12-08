@@ -1,0 +1,194 @@
+@import '@/style/common';
+#talk-area{
+    position:absolute;
+    right:-1px;
+    top:0px;height:525px;width:614px;
+    border-left:$border_style;
+    .top{
+        height:60px;border-bottom:$border_style;
+        .iconfont{
+            position: absolute;
+            right:20px;top:23px;
+            cursor:pointer;
+        }
+    }
+    .group-info-{
+        height:463px;position:absolute;
+        top:61px;right:1px;width:282px;
+        border-left:$border_style;
+		.up{
+			height:112px;border-bottom:$border_style;
+			position:relative;
+			.user-portrait{
+				position:absolute;top:10px;left:10px;
+			}
+			.group-name{
+				top:8px;left:76px;
+			}
+			.group-notice{
+				top:80px;left:5px;width:220px;
+				span,input{
+					color:$font_color_notice;width:220px !important;
+				}
+			}
+			.group-number,.group-notice-p{
+				position:absolute;color:$font_color_notice;
+			}
+			.group-number{
+				left:80px;top:35px;
+			}
+			.group-notice-p{
+				left:10px;top:60px;color:$font_color_notice;
+			}
+		}
+        .down{
+			position:relative;height:340px;
+			.member-count{
+				margin:10px 0 7px 10px;
+			}
+			.add-member,.delete-member{
+				height:61px;width:36px;padding:5px 10px;float:left;
+				.iconfont{
+					border:$border_style;text-align:center;
+					box-sizing:border-box;font-weight:600;
+					line-height:33px;
+					background:#fff;
+					color:$font_color_notice;border-radius:50%;
+					cursor:pointer;
+					display:inline-block;height:36px;width:36px;
+				}
+				:last-child{
+					@include text_ellipse;text-align:center;
+					display:inline-block;font-size:12px;
+					width:36px;color:$font_color_notice;
+					margin-top:5px;
+				}
+			}
+			.member{
+				height:61px;width:36px;padding:5px 10px;float:left;
+				.user-portrait{
+					float:left;
+				}
+				>span{
+					@include text_ellipse;text-align:center;
+					display:inline-block;font-size:12px;
+					width:36px;color:$font_color_notice;
+					margin-top:5px;
+				}
+			}
+			.see-all{
+				position:absolute;bottom:150px;
+				left:113px;
+				span{
+					cursor:pointer;color:$font_color_success;
+				}
+			}
+			.group-nickname{
+				position:absolute;bottom:80px;
+				padding-left:10px;heigth:40px;width:271px;
+				border-top:$border_style;line-height:40px;
+				.set-input{
+					width:120px !important;top:0px;right:20px;
+					input{
+						width:120px !important;
+					}
+				}
+			}
+			.quit-group,.clear-message{
+				text-align:center;line-height:40px;font-size:14px;height:40px;
+				border-top:$border_style;width:281px;
+				position:absolute;bottom:0px;
+				span{
+					color:$font_color_warning;cursor:pointer;
+				}
+			}
+			.clear-message{
+				bottom:40px;
+				span{
+					color:$font_color_success;
+				}
+			}
+		}
+	}
+	.con-nickname{
+		display:inline-block;max-width:300px;
+		@include text_ellipse;
+		font-size:16px;position:absolute;
+		top:20px;left:20px;
+	}
+	.modal-quit-delete-group{
+		position:fixed;background:#fff;
+		box-shadow:$box_shadow;display:none;
+		width:280px;height:190px;
+		p.notice{
+			text-align:center;width:100%;
+			margin-top:20px;
+		}
+		button{
+			position: absolute;
+			bottom:20px;
+		}
+		.btn-success{
+			right:160px;
+		}
+		.btn-default{
+			right:88px;
+		}
+	}
+	#send-message-area{
+		width:613px;height:160px;
+		border-top:$border_style;
+		position:absolute;right:0px;
+		bottom:0px;
+		#modal-emoji-list{
+			position:absolute;bottom:160px;background:#fff;display:none;
+			width:275px;overflow:auto;height:200px;border:1px solid #ddd;
+			border-left:0 none;padding:10px;border-top-right-radius:5px;
+		}
+		.send-emoji-message,.send-file-message,.share-card-message{
+			width:20px;height:20px;float:left;
+			margin:10px 12px 0px 0px;line-height:20px;text-align:center;
+			span{
+				cursor:pointer;
+			}
+		}
+		.send-emoji-message{
+			margin-left:10px;
+			margin-top:0px;padding-top:10px;
+			span{
+				font-size:20px;
+			}
+		}
+		.send-file-message{
+			position:relative;
+      display:none;
+			span{
+				font-size:18px;
+			}
+			input{
+				position:absolute;width:20px;
+				cursor:pointer;top:-4px;left:-4px;
+				font-size:0;padding:6px 3px;
+				opacity:0;background:#ccc;
+				z-index:-1;
+			}
+		}
+		.share-card-message{
+      display:none;
+			span{
+				font-size:18px;
+			}
+		}
+		textarea{
+			width:612px;border:0 none;
+			resize:none;
+			height:70px;font-size:14px;
+			outline:none;padding:10px;background:#FFFFFF;
+			padding-top:0px;padding-bottom:0px;
+			box-sizing:border-box;margin-top:5px;
+		}
+		.btn-send-message{
+			position:absolute;right:15px;bottom:15px;
+		}
+	}
+}

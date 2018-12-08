@@ -1,0 +1,12 @@
+@import '@/style/common';
+.modal-before-five-days-msg{
+  width:300px;height:170px;
+  position:fixed;background:#fff;
+  box-shadow:$box_shadow;
+  p.notice{
+      text-align:center;margin-top:20px;
+  }
+  button{
+      position:absolute;bottom:20px;right:124px;
+  }
+}

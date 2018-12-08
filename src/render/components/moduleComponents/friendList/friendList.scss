@@ -1,0 +1,41 @@
+@import '@/style/common';
+#friend-list{
+    width:242px;
+    >div {
+        div:nth-child(3){
+            right:0px !important;
+        }
+    }
+    .toggle{
+        height:30px;line-height:30px;
+        padding-left:26px;cursor:pointer;
+        span:nth-child(1){
+            display:inline-block;transition:all 0.3s;
+            font-size:14px;
+        }
+        span:nth-child(2){
+            margin-left:26px;
+        }
+        span:nth-child(3){
+            float:right;margin-right:15px;
+            font-size:12px;
+        }
+    }
+    
+    ul{
+        li{
+            .user-portrait{
+                margin:13px;
+            }
+            &:hover{
+                background:$hover_bagcolor;
+            }
+            .icon-guanbi{
+                position: absolute;bottom:25px;left:200px;
+                cursor:pointer;background:#ccc;
+                border-radius:50%;display:block;height:16px;width:16px;
+                font-size:13px;text-align:center;line-height:18px;color:#fff;
+            }
+        }
+    }
+}

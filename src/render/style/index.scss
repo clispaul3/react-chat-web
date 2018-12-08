@@ -1,0 +1,24 @@
+@import '@/style/common';
+.logo-image{
+    position:absolute;
+    right:-1px;z-index:500;
+    top:0px;height:524px;width:614px;
+    border-left:$border_style;
+    background:#fff;
+    img{
+        position:relative;top:50%;
+        left:50%;transform:translate(-50%,-50%);
+        width:166px;height:210px;
+    }
+}
+.modal-check-version{
+    position:fixed;background:#fff;
+    box-shadow:$box_shadow;display:none;
+    width:215px;height:160px;
+    p.notice{
+        text-align:center;margin-top:20px;
+    }
+    button{
+        position:absolute;bottom:20px;right:80px;
+    }
+}
