@@ -7,5 +7,5 @@
 
 ## Preview
 
-![avatar](http://jhmcimg.weinongtech.com/1544260514677/156593/react-chat-web-preview1.png)
+![WEDN.NET Dashboard Login](http://jhmcimg.weinongtech.com/1544260514677/156593/react-chat-web-preview1.png)
 ![avatar](http://jhmcimg.weinongtech.com/1544258990321/110123/react-chat-web-preview2.png)
