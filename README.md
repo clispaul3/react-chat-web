@@ -8,4 +8,4 @@
 ## Preview
 
 ![WEDN.NET Dashboard Login](http://jhmcimg.weinongtech.com/1544258656812/159781/react-chat-web-preview1.png)
-![avatar](http://jhmcimg.weinongtech.com/1544258656813/109715/react-chat-web-preview2.png)
+
